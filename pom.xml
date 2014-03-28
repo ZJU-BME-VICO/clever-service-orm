@@ -7,7 +7,7 @@
 		http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.zju.bme</groupId>
-	<artifactId>clever-service-orm</artifactId>
+	<artifactId>clever-service-orm-validate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -18,7 +18,7 @@
 		<cxf.version>2.7.8</cxf.version>
 		<aspectj.version>1.7.4</aspectj.version>
 		<openEHR.version>1.0.5.2</openEHR.version>
-		<tomcat.port>9091</tomcat.port>
+		<tomcat.port>9093</tomcat.port>
 		<tomcat.server>localhost</tomcat.server>
 		<dbserver>localhost</dbserver>
 	</properties>
@@ -29,7 +29,7 @@
 			<properties>
 				<env>dev</env>
 				<tomcat.url>http://${tomcat.server}:${tomcat.port}/manager/text</tomcat.url>
-				<database.url>jdbc:sqlserver://${dbserver}:1433;DatabaseName=clever-service-orm</database.url>
+				<database.url>jdbc:sqlserver://${dbserver}:1433;DatabaseName=clever-service-orm-validate</database.url>
 				<database.username>sa</database.username>
 				<database.password>sa</database.password>
 			</properties>
